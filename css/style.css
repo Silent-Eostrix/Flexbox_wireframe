@@ -70,3 +70,35 @@
     vertical-align: center;
 
 }
+
+@media screen and (min-width: 1024px) {
+
+.flexbox_container {
+    flex-flow: row wrap;
+}
+
+.header{
+    flex: 100%;
+    margin: 10px
+}
+
+.aside {
+    flex: 10%;
+    align-self: flex-start;
+    height: 70vh;
+    margin: 10px
+}
+.article_container {
+    order: +1;
+    flex: 40%;
+    align-self: flex-end;
+    height: 70vh;
+    margin: 10px
+}
+}
+
+.footer {
+    order: +1;
+    flex: 85%;
+    margin: 10px
+}
